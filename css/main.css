@@ -1,5 +1,22 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap");
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  color: inherit;
+  font-size: 24px;
+}
+
 .nav {
   padding: 20px 0;
   background-color: #171718;
@@ -27,19 +44,16 @@
 .nav__list-link {
   color: #ffffff;
 }
-.logo {
-  font-family: "Poppins", sans-serif;
-  color: inherit;
-  font-size: 24px;
+.nav__list-link--active {
+  position: relative;
 }
-
-html,
-body {
-  font-family: "DM Sans", sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+.nav__list-link--active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #5C62EC;
 }/*# sourceMappingURL=main.css.map */
