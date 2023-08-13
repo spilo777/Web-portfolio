@@ -6,7 +6,6 @@
   color: #ffffff;
   border-bottom: 1px solid #26292D;
 }
-
 .nav__row {
   display: flex;
   justify-content: space-between;
@@ -16,17 +15,6 @@
   row-gap: 20px;
   flex-wrap: wrap;
 }
-
-.logo {
-  font-family: "Poppins", sans-serif;
-  color: inherit;
-  font-size: 24px;
-}
-
-.logo strong {
-  font-weight: 700;
-}
-
 .nav__list {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -36,9 +24,13 @@
   font-size: 16px;
   font-weight: 500;
 }
-
 .nav__list-link {
   color: #ffffff;
+}
+.logo {
+  font-family: "Poppins", sans-serif;
+  color: inherit;
+  font-size: 24px;
 }
 
 html,
