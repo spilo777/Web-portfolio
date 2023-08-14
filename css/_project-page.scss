@@ -1,5 +1,5 @@
 @import"./variables";
-
+@import"./media";
 
 
 
@@ -32,6 +32,15 @@
         margin-bottom: 30px;
 
     }
+
+
+
+    &__text {
+
+        font-size: 18px;
+        font-weight: 200;
+    }
+
 }
 
 .btn-outline {

@@ -1,5 +1,6 @@
 // NAVIGATION
 @import"./variables";
+@import"./media";
 
 // font-family: 'DM Sans', sans-serif;
 // font-family: 'Poppins', sans-serif;
@@ -9,10 +10,25 @@ body {
     font-family: 'DM Sans', sans-serif;
     letter-spacing: -0.5px;
     color: $black-text;
+
+    height: 100%;
+
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section {
+    flex: 1 1 auto;
 }
 
 .container {
     margin: 0 auto;
+
 
     padding: 0 15px;
     max-width: 1200px;
@@ -50,6 +66,9 @@ body {
     }
 
     &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        row-gap: 10px;
 
         font-family: 'Poppins', sans-serif;
 
