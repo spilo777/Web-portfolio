@@ -2,7 +2,11 @@
 
 .section {
 
-	padding: 70px 0;
+	padding: 40px 0;
+
+	@media (max-width: 620px) {
+		font-size: 40px;
+	}
 }
 
 .title-1 {
@@ -14,13 +18,21 @@
 	color: $accent;
 	text-align: center;
 
+	@media (max-width: 620px) {
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+
 }
+
+
 
 .projects {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 30px;
 	row-gap: 30px;
+	justify-content: center;
 }
 
 .project {
@@ -48,6 +60,11 @@
 		text-align: center;
 
 		color: $black-text;
+
+		@media (max-width: 620px) {
+			font-size: 22px;
+		}
+
 	}
 }
 
