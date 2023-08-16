@@ -41,6 +41,11 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 1.3;
+
+    @media (max-width: 620px) {
+        font-size: 27px;
+    }
+
 }
 
 .map-city {
@@ -55,7 +60,6 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
 
     @media (max-width: 620px) {
         display: none;

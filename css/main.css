@@ -351,6 +351,11 @@ body {
   font-weight: 700;
   line-height: 1.3;
 }
+@media (max-width: 620px) {
+  .title-2 {
+    font-size: 27px;
+  }
+}
 
 .map-city {
   margin-top: 20px;
