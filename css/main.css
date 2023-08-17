@@ -26,9 +26,10 @@ body {
 }
 
 .logo {
+  margin-right: auto;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 .nav {
@@ -40,12 +41,17 @@ body {
 }
 .nav__row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   -moz-column-gap: 40px;
        column-gap: 40px;
   row-gap: 20px;
   flex-wrap: wrap;
+}
+@media (max-width: 620px) {
+  .nav__row {
+    justify-content: space-between;
+  }
 }
 .nav__list {
   display: flex;
@@ -397,6 +403,7 @@ body {
 }
 
 .dark-mode-btn {
+  order: 9;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -405,6 +412,11 @@ body {
   border-radius: 50px;
   background-color: #272727;
   padding: 5px;
+}
+@media (max-width: 620px) {
+  .dark-mode-btn {
+    order: 0;
+  }
 }
 .dark-mode-btn::before {
   position: absolute;

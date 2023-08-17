@@ -39,10 +39,12 @@ body {
 
 .logo {
 
+    margin-right: auto;
+
     font-family: 'Poppins', sans-serif;
 
     color: $header-text;
-    font-size: 24px;
+    font-size: 23px;
 }
 
 // NAV
@@ -59,11 +61,15 @@ body {
     &__row {
 
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         column-gap: 40px;
         row-gap: 20px;
         flex-wrap: wrap;
+
+        @media (max-width: 620px) {
+            justify-content: space-between;
+        }
     }
 
     &__list {
