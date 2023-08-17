@@ -1,3 +1,18 @@
+// DARK BTN
+
+let btnDarkMode = document.querySelector(".dark-mode-btn");
+
+
+btnDarkMode.addEventListener('click', function () {
+    btnDarkMode.classList.toggle("dark-mode-btn--active");
+});
+
+
+
+
+
+
+// BTN UP
 
 let mybutton = document.getElementById("myBtn");
 
@@ -14,6 +29,8 @@ function scrollFunction() {
 
 
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
