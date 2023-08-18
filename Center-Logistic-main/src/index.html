@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Center Logistic"
+})
+
+<body class="">
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <a data-scroll="#intro" href="#"><img src="@img/logo.svg" alt="Center Logistic" class="logo"></a>
+                <nav class="nav">
+                    <a data-scroll="#services" href="#" class="nav__link">Services</a>
+                    <a data-scroll="#clients" href="#" class="nav__link">Clients</a>
+                    <a data-scroll="#benefits" href="#" class="nav__link">Benefits</a>
+                    <a data-scroll="#team" href="#" class="nav__link">Team</a>
+                    <a data-scroll="#news" href="#" class="nav__link">News</a>
+                    <a data-modal="modal-request-form" href="#" class="nav__link">Contact Us</a>
+
+                </nav>
+                <button class="burger">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </button>
+            </div>
+        </header>
+
+        @@include('html/blocks/intro.html', {})
+        @@include('html/blocks/services.html', {})
+        @@include('html/blocks/clients.html', {})
+        @@include('html/blocks/benefits.html', {})
+        @@include('html/blocks/team.html', {})
+        @@include('html/blocks/mission.html', {})
+        @@include('html/blocks/news.html', {})
+
+        @@include('html/blocks/footer.html', {})
+
+
+    </div>
+    @@include('html/ui/modal-request-form.html', {})
+    @@include('html/ui/modal-thanks.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

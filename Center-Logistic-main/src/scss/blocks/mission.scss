@@ -1,0 +1,57 @@
+.mission {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+
+    &__title {
+        font-weight: 900;
+        font-size: min(12vw, 90px);
+        line-height: 1.1;
+        color: rgba(0, 0, 0, 0.05);
+    }
+
+
+    &__card {
+        position: relative;
+        padding: min(6vw, 60px) min(5vw, 30px);
+        margin-bottom: 30px;
+        margin-top: max(-3.3vw, -22px);
+
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.16);
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 41.6%;
+            height: 2px;
+            bottom: 0;
+        }
+
+        &::before {
+            background: #004af2;
+            right: 50%;
+        }
+
+        &::after {
+            background: #fc2c2b;
+            left: 50%;
+        }
+    }
+
+    &__subtitle {
+        font-weight: bold;
+        font-size: min(5.5vw, 30px);
+        line-height: 1.2;
+        color: #004af2;
+    }
+
+    &__description {
+        font-weight: normal;
+        font-size: min(4.3vw, 21px);
+        line-height: 1.4;
+        color: #585858;
+    }
+}
