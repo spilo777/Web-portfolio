@@ -1,9 +1,5 @@
-@import"./variables";
-
 .content-list {
-
     margin: 0 auto;
-
     max-width: 570px;
     display: flex;
     flex-direction: column;
@@ -12,7 +8,6 @@
     row-gap: 40px;
 
     &__item {
-
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -23,16 +18,17 @@
         }
 
         a {
-            color: $black-text;
+            color: var(--title-2);
 
             &:hover {
-                color: blue;
+                color: rgb(37, 134, 224);
                 text-decoration: underline;
             }
         }
 
     }
 }
+
 
 .title-2 {
 

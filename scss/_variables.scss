@@ -1,13 +1,28 @@
+$black: #171718;
+$black-border: #26292D;
+$white: #fff;
+$purple: #5C62EC;
+$dark-bg: $black;
+$dark-border: $black;
+$black-text: $black;
+$header-text: $white;
+$accent: $purple;
 
-    $black: #171718;
-    $black-border: #26292D;
-    $white: #fff;
-    $purple: #5C62EC;
-    $dark-bg: $black;
-    $dark-border: $black;
-    $black-text: $black;
-    $header-text: $white;
-    $accent: $purple;
+// day mode
+$page-bg: $white;
+$text-color: $black;
 
 
-// DAY MODE
+
+:root {
+    --black: #171718;
+    --white: #fff;
+    --title-1: #5C62EC;
+    --title-2: #000;
+    --main-bg-color: #fff;
+    --btn-outline-color: #171718;
+    --btn-outline-border-color: 1px solid var(--black);
+    --project-card-bg: var(--white);
+    --project-card-text: var(--black);
+    --box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
