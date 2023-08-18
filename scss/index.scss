@@ -1,13 +1,15 @@
-@import"./reset.css";
+@import"variables";
+@import"reset.css";
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&display=swap');
-@import"./nav";
-@import"./header";
-@import"./section_projects";
-@import"./footer";
-@import"./project-page";
-@import"./skills";
-@import"./btn__up";
-@import"./button-dark";
-@import"./dark-themes";
+@import"nav";
+@import"header";
+@import"section_projects";
+@import"footer";
+@import"project-page";
+@import"skills";
+@import"btn__up";
+@import"button-dark";
+@import"dark-themes";
+
 // font-family: 'DM Sans', sans-serif;
 // font-family: 'Poppins', sans-serif; 
