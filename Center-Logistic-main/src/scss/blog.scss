@@ -1,0 +1,20 @@
+.blog {
+    display: flex;
+
+    &__col {
+        width: 50%;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+        margin-bottom: 40px;
+
+        &__col {
+            width: 100%;
+        }
+    }
+
+    .article {
+        width: 100%;
+    }
+}

@@ -1,0 +1,231 @@
+.clients {
+
+    .container {}
+
+    &__title {
+        font-family: 'Lato', 'sans-serif';
+        font-size: min(11vw, 45px);
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 41px;
+        color: #2C2C2C;
+
+        span {
+            color: #0D53F2;
+        }
+    }
+
+    &__body {
+        display: flex;
+        margin-bottom: 60px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__list {
+        width: 55%;
+        background-image: url('@img/clients-logo/map.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0;
+            justify-content: space-evenly;
+
+            li {
+                list-style: none;
+                margin-right: 45px;
+                margin-bottom: 45px;
+
+                @media (max-width: 767px) {
+                    margin-right: 10px;
+                    margin-bottom: 20px;
+
+                    img {
+                        height: 12vw;
+                    }
+                }
+            }
+        }
+    }
+
+    &__love {
+        display: inline-block;
+
+        padding: 6px 0 15px;
+        margin-left: 40px;
+
+        color: #464646;
+        font-size: 18px;
+
+        background-image: url("../img/clients-heart.svg");
+        background-repeat: no-repeat;
+        background-position: top 2px left 19px;
+    }
+
+    @media (max-width: 450px) {
+        .btn {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.reviews {
+    width: 45%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+
+        width: 15px;
+        height: 100%;
+
+
+        position: absolute;
+        top: 0;
+        z-index: 3;
+    }
+
+    &::before {
+        left: 0;
+        background-image: linear-gradient(to right, white, transparent);
+    }
+
+    &::after {
+        right: 0;
+        background-image: linear-gradient(to left, white, transparent);
+    }
+
+
+    &__item {
+        display: none;
+
+        padding: 0 12px;
+
+        &:first-child {
+            display: block;
+        }
+
+
+
+        cursor: grab;
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    &__header {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-top: 20px;
+
+        picture {
+            z-index: 2;
+        }
+
+    }
+
+
+    &__header &__photo {
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0px 3px 6px rgb(0, 0, 0, .16);
+        z-index: 2;
+    }
+
+    &__header &__photo-lines {
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        z-index: 1;
+
+    }
+
+    &__user-information {
+        margin-left: 20px;
+        color: #2C2C2C;
+        font-family: 'Lato', 'sans-serif';
+        flex-grow: 1;
+    }
+
+    &__username {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    &__user-description {
+        font-weight: 400;
+    }
+
+    &__body {
+        p {
+            margin-top: 30px;
+            line-height: 1.8;
+            color: #585858;
+
+            &:first-child {
+                text-indent: 20px;
+            }
+        }
+    }
+
+
+    .slick-dots {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        li {
+            margin: 0 10px;
+
+            button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: #DBDBDB;
+
+
+                border: 0;
+                padding: 0;
+                background-color: none;
+
+                font-size: 0;
+
+                cursor: pointer;
+
+                transition: box-shadow .35s linear, background-color .35s linear;
+            }
+
+            &.slick-active button {
+                box-shadow: 0 0 0 5px rgba(0, 74, 242, 0.11);
+                background-color: #004AF2;
+            }
+        }
+    }
+}

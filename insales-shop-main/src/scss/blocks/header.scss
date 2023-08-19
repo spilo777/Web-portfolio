@@ -1,0 +1,131 @@
+/* stylelint-disable block-no-empty */
+.header {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 0 40px;
+  font-size: 1rem;
+  border-bottom: 1px solid #efefef;
+
+  @media (max-width: 1200px) {
+    min-height: 56px;
+    padding: 0 8px;
+  }
+
+  &__content {
+    display: flex;
+    gap: clamp(10px, 3vw, 50px);
+    align-items: center;
+  }
+
+  &__menu-burger {
+    @media (min-width: 1201px) {
+      display: none;
+    }
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__logo {
+    max-width: 159px;
+
+    @media (max-width: 1200px) {
+      max-width: 100px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 24px;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__phone-link {
+    color: #333;
+    font-weight: 600;
+    font-family: Golos, Helvetica, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-shrink: 0;
+    gap: 16px;
+    align-items: center;
+    font-weight: 500;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: #777;
+    font-weight: 400;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+      gap: 27px;
+    }
+  }
+
+  &__control {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+
+    &:hover {
+      background-color: var(--background-hover);
+    }
+  }
+
+  &__search {
+    @media (min-width: 1201px) {
+      display: none;
+    }
+  }
+
+  &__compare {
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+// .header {
+
+//   &__controls {}
+
+//   &__search {}
+
+//   &__control {}
+
+//   &__favorites {}
+
+//   &__cart {}
+// }

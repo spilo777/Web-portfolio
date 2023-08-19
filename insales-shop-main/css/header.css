@@ -1,0 +1,56 @@
+.header {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 1rem;
+}
+.header__content {
+  display: flex;
+  gap: 50px;
+}
+.header__contacts {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__phone-link {
+  color: #333;
+  font-family: "Golos";
+  font-weight: 600;
+  text-decoration: none;
+}
+.header__phone-link:hover {
+  text-decoration: underline;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 500;
+}
+.header__link {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 400;
+  color: #777777;
+}
+.header__link:hover {
+  text-decoration: underline;
+}
+.header__controls {
+  display: flex;
+  gap: calc(36px - 0.5rem);
+  align-items: center;
+}
+.header__control {
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease-out;
+  border-radius: 50%;
+}
+.header__control:hover {
+  background-color: #eee;
+}

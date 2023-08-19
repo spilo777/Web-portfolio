@@ -1,0 +1,118 @@
+.section {
+
+    &__title {}
+}
+
+.container {}
+
+.text {
+    margin-bottom: 50px;
+
+    &__content {
+        max-width: 890px;
+
+        font-size: 18px;
+        line-height: 1.5;
+        color: #585858;
+
+        p {
+            text-indent: 20px;
+            margin-bottom: 15px;
+
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: bold;
+            color: #2C2C2C;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 27px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        h4 {
+            font-size: 19px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        h6 {
+            font-size: 15px;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 25px;
+        }
+
+        li {
+            list-style-position: inside;
+        }
+
+        a {
+            color: #0D53F2;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            box-shadow: 0 3px 6px #00000036;
+            border-radius: 4px;
+            margin: 0 auto 15px;
+        }
+
+        hr {
+            position: relative;
+
+            border: none;
+            display: block;
+
+            margin: 0;
+            padding: 20px;
+
+            &::before,
+            &::after {
+                content: '';
+                width: 50%;
+                height: 3px;
+
+                position: absolute;
+                bottom: 50%;
+            }
+
+            &::before {
+                background-color: #0D53F2;
+                left: 0;
+            }
+
+            &::after {
+                background-color: black;
+                right: 0;
+            }
+        }
+    }
+}
+
+.btn {}
+
+.btn--orange {}
+
+.btn--shadow {}

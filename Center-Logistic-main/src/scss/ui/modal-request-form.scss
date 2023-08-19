@@ -1,0 +1,123 @@
+.modal-window {
+    position: relative;
+
+    max-width: 400px;
+    width: 100%;
+
+    padding: min(4vw, 25px);
+
+    background-color: #fff;
+
+    text-align: center;
+
+    opacity: 0;
+    transform: scale(.5);
+
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: min(6.6vw, 24px);
+        line-height: 1.1;
+        color: #004af2;
+
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        font-size: min(5.4vw, 15px);
+        line-height: 1.4;
+        color: #2c2c2c;
+    }
+
+    &__footer {
+        border-top: 1px solid #E8E8E8;
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+
+    &__footer-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: min(5.5vw, 18px);
+        line-height: 1.1;
+        color: #2c2c2c;
+
+        margin-bottom: 10px;
+    }
+
+    &__footer-contacts {
+        font-size: min(5.4vw, 15px);
+        line-height: 1.4;
+        color: #2c2c2c;
+        font-style: normal;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__close-button {
+        background: none;
+        border: none;
+
+        position: absolute;
+        top: -30px;
+        right: -35px;
+
+        cursor: pointer;
+
+        transition: transform .2s linear;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+
+        @media (max-width: 767px) {
+            right: 0;
+
+        }
+    }
+
+    .form {
+        padding: 0;
+
+        .input {}
+
+        .input--dark {
+            border-bottom-color: #E8E8E8;
+            color: #2c2c2c;
+
+            &::placeholder {
+                color: #2c2c2c;
+            }
+
+            &:hover,
+            &:focus {
+                border-bottom-color: #707070;
+            }
+        }
+
+        .input--dark.input--user {
+            background-image: url("@img/team-user-icon.svg");
+        }
+
+        .input--dark.input--phone {
+            background-image: url("@img/team-phone-icon.svg");
+        }
+
+        .input--dark.input--email {
+            background-image: url("@img/team-mail-icon.svg");
+        }
+    }
+}

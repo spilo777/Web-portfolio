@@ -4,12 +4,154 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Personal-web</title>
-        <link rel="stylesheet" href="/css/main.scss">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/index.css">
     </head>
     <body>
         <nav class="nav">
-            
+            <div class="container">
+                <div class="nav__row">
+                    <a href="./index.html" class="logo"><strong>Popandopulo</strong>
+                        portfolio</a>
+
+                    <button class="dark-mode-btn"
+                        type="button">
+                        <img class="dark-mode-btn__icon"
+                            src="/image/icons/Sun-icon.svg" alt="light-mode">
+                        <img class="dark-mode-btn__icon"
+                            src="/image/icons/Moon-icon.svg" alt="dark-mode">
+                    </button>
+
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a
+                                class="nav__list-link nav__list-link--active"
+                                href="#">Projects</a></li>
+                        <li class="nav__list-item"></li>
+                        <li class="nav__list-item"><a class="nav__list-link"
+                                href="/skill.html">Skills</a></li>
+                        <li class="nav__list-item"></li>
+                        <li class="nav__list-item"><a class="nav__list-link"
+                                href="contact.html">Contacts</a></li>
+                        <li class="nav__list-item"></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <header class="header">
+            <div class="header__wrapper">
+                <h1 class="header__title">
+                    <strong>Hi, my name is <em>Ilya</em></strong>
+                    <p>a frontend developer</p>
+                </h1>
+                <div class="header__text">
+                    <p>with passion for learning and creating.</p>
+                </div>
+                <a href="/CM-HH.pdf" target="_blank" class="btn">Watch CV</a>
+            </div>
+        </header>
+
+        <main class="section">
+            <div class="container">
+                <h2 class="title-1">Projects</h2>
+                <ul class="projects">
+                    <li class="project">
+                        <a class="animated-link"
+                            href="./project-page-transopt.html">
+                            <img class="project__img"
+                                src="/image/projects/01.png"
+                                alt>
+                            <h3 class="project__title">
+                                Transport company</h3>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="animated-link"
+                            href="./project-page-meridian.html">
+                            <img class="project__img"
+                                src="/image/projects/02.jpg"
+                                alt>
+                            <h3 class="project__title">Meridian</h3>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="animated-link" href="./project-page.html">
+                            <img class="project__img"
+                                src="/image/projects/03.jpg"
+                                alt>
+                            <h3 class="project__title">Video portal</h3>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="animated-link" href="./project-page.html">
+                            <img class="project__img"
+                                src="/image/projects/04.jpg"
+                                alt>
+                            <h3 class="project__title">Dating app</h3>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="animated-link" href="./project-page.html">
+                            <img class="project__img"
+                                src="/image/projects/05.jpg"
+                                alt>
+                            <h3 class="project__title">Landing</h3>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a class="animated-link" href="./project-page.html">
+                            <img class="project__img"
+                                src="/image/projects/06.jpg"
+                                alt>
+                            <h3 class="project__title">Gaming community</h3>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><img
+                        src="/image/icons/arrowup1_120992.svg"></button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="#!">
+                                <img src="/image/icons/vk.svg" alt="VK">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!">
+                                <img src="/image/icons/insta.svg" alt="VK">
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="#!">
+                                <img src="/image/icons/telegram.svg"
+                                    alt="VK">
+                            </a>
+                        </li>
+
+                        <li class="social__item">
+                            <a href="#!">
+                                <img src="/image/icons/gitHub.svg"
+                                    alt="VK">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#!">
+                                <img
+                                    src="/image/icons/linkedIn.svg"
+                                    alt="VK">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        <p>© 2023 ilo.spilo.ru</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/main.js"></script>
     </body>
 </html>

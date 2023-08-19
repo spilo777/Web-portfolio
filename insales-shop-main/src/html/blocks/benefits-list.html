@@ -1,0 +1,38 @@
+<section class="benefits-list">
+  <h2 class="benefits-list__title">Наши преимущества</h2>
+  <ul class="benefits-list__items"></ul>
+
+</section>
+
+<script>
+  (() => {
+    let list = [
+      'Рассрочка без переплат',
+      'Удобная доставка',
+      'Гарантия лучшей цены',
+      'Бонусная программа',
+      'Экспресс-доставка за 2 часа',
+      'Самовывоз через 15 минут',
+      'Приём отходов на переработку',
+      'Быстрый обмен и возврат'
+    ];
+
+    let result = '';
+
+    for (let i = 0; i < list.length; i++) {
+      const item = list[i];
+
+      let template = /* html */ `
+        <li class="benefits-list__item">
+          <img src="@img/benefits-list/${i + 1}.svg" alt="" class="benefits-list__icon">
+          <span class="benefits-list__text">${item}</span>
+        </li>
+        `;
+
+      result += template;
+    }
+
+    document.querySelector('.benefits-list__items').innerHTML = result;
+  })();
+
+</script>

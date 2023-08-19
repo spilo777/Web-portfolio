@@ -1,0 +1,28 @@
+<div class="intro" id="intro">
+    @@include('../ui/loader.html', {})
+
+    <div class="slider">
+
+        <img class="slider__img" src="@img/intro-bg.jpg" alt="">
+        <img class="slider__img" src="@img/intro-bg-2.jpg" alt="">
+    </div>
+
+    <div class="container">
+
+        @@include('../ui/request-form.html', {"mod": "request-form--intro", "aos": 'data-aos="fade-right"'})
+
+        <div class="slider-arrows">
+            <button class="slider-arrows__arrow slider-arrows__arrow--prev">Prev Slide</button>
+            <button class="slider-arrows__arrow slider-arrows__arrow--next">Next Slide</button>
+
+        </div>
+
+
+        <div class="intro__text" data-aos="fade-left">
+            <div class="intro__amp">&amp;</div>
+            <div class="intro__text-country">USA, Europe, Asia</div>
+            <h1 class="intro__title">Trans <br> Logistic</h1>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Center Logistic - Blog"
+})
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <a href="index.html"><img src="@img/logo.svg" alt="Center Logistic" class="logo"></a>
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Home page</a>
+                    <a href="./privacy_policy.html" class="nav__link">Privacy Policy</a>
+                    <a href="./terms_and_conditions.html" class="nav__link">Terms &amp; Conditions</a>
+                </nav>
+                <button class="burger"><img src="@img/burger.svg" alt=""></button>
+            </div>
+        </header>
+
+        <div class="intro intro--blog">
+            <div class="container">
+            </div>
+        </div>
+
+
+        <section class="section section--last">
+            <div class="container">
+                <main class="blog">
+                    <div class="blog__col ">
+                        <h2 class="section__title"><span>Interesting</span> to read</h2>
+                        <div class="articles articles--column">
+                            <article class="article">
+                                <h3 class="article__title"><a href="#">News title</a></h3>
+                                <div class="article__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed
+                                    diam
+                                    nonumy
+                                    eirmod tempor
+                                    invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                    et
+                                    ea rebum.
+                                    Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consetetur
+                                    sadipscing</div>
+                                <time class="article__date" datetime="2019-03-21">21 March, 2019</time>
+                            </article>
+                            <article class="article">
+                                <h3 class="article__title"><a href="#">News title</a></h3>
+                                <div class="article__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed
+                                    diam
+                                    nonumy
+                                    eirmod tempor
+                                    invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                    et
+                                    ea rebum.
+                                    Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consetetur
+                                    sadipscing</div>
+                                <time class="article__date" datetime="2019-03-21">21 March, 2019</time>
+                            </article>
+                            <article class="article">
+                                <h3 class="article__title"><a href="#">News title</a></h3>
+                                <div class="article__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed
+                                    diam
+                                    nonumy
+                                    eirmod tempor
+                                    invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                    et
+                                    ea rebum.
+                                    Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consetetur
+                                    sadipscing</div>
+                                <time class="article__date" datetime="2019-03-21">21 March, 2019</time>
+                            </article>
+                            <article class="article">
+                                <h3 class="article__title"><a href="#">News title</a></h3>
+                                <div class="article__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                                    sed
+                                    diam
+                                    nonumy
+                                    eirmod tempor
+                                    invidunt ut labore et dolore
+                                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                    et
+                                    ea rebum.
+                                    Stet clita kasd
+                                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+                                    sit
+                                    amet,
+                                    consetetur
+                                    sadipscing</div>
+                                <time class="article__date" datetime="2019-03-21">21 March, 2019</time>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="blog__col ">@@include('./html/ui/request-form.html', {"mod":
+                        "request-form--blog"})</div>
+
+
+                </main>
+
+                <a href="index.html" class="btn btn--orange btn--shadow"><span>Back to home</span></a>
+            </div>
+        </section>
+
+        @@include('html/blocks/footer.html', {})
+    </div>
+
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

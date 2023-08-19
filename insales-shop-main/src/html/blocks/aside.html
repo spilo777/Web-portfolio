@@ -1,0 +1,114 @@
+<aside class="aside">
+  <div class="aside__header">
+    <h3 class="aside__title">Меню</h3>
+    <div class="aside__close-button">
+      <img src="@img/close-icon.svg" id="close-menu-burger-btn" alt="close-icon">
+    </div>
+  </div>
+
+  <div class="aside__body">
+    <div class="aside__search">
+      <form action="/search" method="get" class="aside__search-form">
+        <button type="submit" class="aside__search-btn">
+          <img src="@img/search.svg" alt="search-icon">
+        </button>
+        <input type="text" autocomplete="off" class="aside__search-input" name="" value="" placeholder="Что ищем?">
+      </form>
+    </div>
+
+    <div class="aside__controls">
+      <a class="aside__favorites aside__control">
+        <img src="@img/favorites.svg" alt="favorites-icon">
+        <span>Избранное</span>
+      </a>
+      <a class="aside__compare aside__control">
+        <img src="@img/compare.svg" alt="compare-icon">
+        <span>Сравнение</span>
+      </a>
+    </div>
+
+
+    <div class="aside__contacts">
+      <a class="aside__phone-link" href="tel:+74956498314">+7 495 649-83-14</a>
+      <a class="aside__phone-link" href="tel:+78005551061">+7 800 555-10-61</a>
+    </div>
+
+    <div class="aside__collections">
+      <script>
+        (() => {
+          let collections = [
+            { title: "Масла и автохимия" },
+            { title: "Шины и диски" },
+            { title: "Аккумуляторы и аксессуары" },
+            { title: "Уход за автомобилем" },
+            { title: "Автоаксессуары и принадлежности" },
+            { title: "Инструменты и оборудование" },
+            { title: "Автозвук" },
+            { title: "Электроника для авто" },
+            { title: "Автозапчасти" },
+            { title: "Товары для мототехники, мотоэкипировка" },
+            { title: "Гараж и автосервис" },
+          ];
+          
+          let
+            result = '',
+            subcollectionsLast = '<div class="subcollections">';
+
+          for (const subcollection of collections) {
+            let template = /* html */ `
+                <div class="collections-item"><a href="#">${subcollection.title}</a></div>`;
+            subcollectionsLast += template;
+          }
+          subcollectionsLast += `</div>`;
+
+          for (const collection of collections) {
+            let subcollections = /* html */ `<div class="subcollections">
+              <nav class="subcollections__navigation">
+                <button class="subcollections__back-btn"><img class="subcollections__back-btn-icon" src="@img/arrow-left.svg" alt="back button icon"></button>
+                <button type="button" class="subcollections__search-btn js-search-btn">
+                  <img src="@img/search.svg" alt="search-icon" />
+                </button>
+              </nav>
+
+              <div class="subcollections__body">
+                <div class="subcollections__title">${collection.title}</div>
+                <div class="subcollections__more">
+                  <a href="#">Смотреть все товары</a>
+                  <img src="@img/collection-arrow.svg" alt="right-arrow-icon">
+                </div>`;
+
+            for (const subcollection of collections) {
+              let template = /* html */ `
+                <div class="collections-item"><a href="#">${subcollection.title}</a>${subcollectionsLast}</div>`;
+              subcollections += template;
+            }
+
+            subcollections += /* html */ `</div></div>`;
+
+
+            let template = /* html */ `
+              <div href="#" class="collections-item">
+                <a href="#">${collection.title}</a>
+                <img src="@img/collection-arrow.svg" alt="open-more">
+                ${subcollections}
+              </div>`;
+            result += template;
+          }
+
+          document.querySelector('.aside__collections').innerHTML = result;
+          // document.querySelector('.collections-item').classList.add('active');
+
+        })();
+      </script>
+    </div>
+
+    <div class="aside__links">
+      <a href="#" class="aside__link">Акции</a>
+      <a href="#" class="aside__link">Доставка и самовывоз</a>
+      <a href="#" class="aside__link">Наши услуги</a>
+      <a href="#" class="aside__link">Статьи</a>
+      <a href="#" class="aside__link">Вакансии</a>
+    </div>
+  </div>
+
+</aside>
