@@ -1,0 +1,44 @@
+<section class="brand-carousel">
+  <!-- <div class="left-arrow"><img class="left-arrow-icon" src="@img/right-arrow.svg" alt=""></div> -->
+  <div class="brand-carousel__content">
+    <script>
+      (() => {
+        let brands = [
+          { title: "Wolkswagen", link: "@img/brands/wolkswagen-logo.svg" },
+          { title: "BMW", link: "@img/brands/bmw-logo.svg" },
+          { title: "Citroën", link: "@img/brands/citroen-logo.svg" },
+          { title: "Toyota", link: "@img/brands/toyota-logo.svg" },
+          { title: "Peugeot", link: "@img/brands/peugeot-logo.svg" },
+          { title: "Mercedes", link: "@img/brands/mercedes-logo.svg" },
+          { title: "Audi", link: "@img/brands/audi-logo.svg" },
+          { title: "Hyundai", link: "@img/brands/hyundai-logo.svg" },
+          { title: "Kia", link: "@img/brands/kia-logo.svg" }
+        ];
+
+        let result = '';
+
+        for (const item of brands) {
+          let template = /* html */ `
+
+        <a href="#" class="brand">
+          <div class="brand__image">
+            <img src="${item.link}">
+          </div>
+          <h3 class="brand__title">${item.title}</h3>
+        </a>
+
+          `;
+
+          result += template;
+        }
+
+        result += result;
+
+        document.querySelector('.brand-carousel__content').innerHTML = result;
+      })();
+    </script>
+  </div>
+  <div id="brand-carousel-right-arrow" class="right-arrow"><img class="right-arrow-icon" src="@img/right-arrow.svg"
+      alt=""></div>
+
+</section>

@@ -1,0 +1,61 @@
+.main {
+  padding: 32px 74px 32px 74px;
+  max-width: calc(100% - 370px);
+}
+
+.brand-carousel {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  align-items: center;
+}
+.brand-carousel__content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.left-arrow,
+.right-arrow {
+  border: 2px solid #EFEFEF;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.left-arrow-icon,
+.right-arrow-icon {
+  width: 32px;
+  height: 32px;
+  max-width: unset;
+  padding: 6px;
+}
+
+.left-arrow {
+  transform: rotate(180deg);
+}
+
+.brand {
+  text-decoration: none;
+  min-width: 130px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.2s ease-out;
+}
+.brand:hover {
+  background-color: #eee;
+}
+.brand__image {
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 6px;
+  width: 55px;
+}
+.brand__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: #333333;
+}
